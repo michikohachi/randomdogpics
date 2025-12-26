@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dog Image Generator</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="img/dogsapilogo.png">
+</head>
+<body>
+
+  <div class="card">
+    <!-- <h2>🐶 Random Dog Generator</h2> -->
+    <h2>
+  <img src="img/dogsapilogo.png" alt="Dog" width="50" height="50" style="vertical-align: middle; margin-right: 10px;">
+  Random Dog Generator
+</h2>
+
+    <div class="image-box">
+      <div id="loader" class="loader"></div>
+      <img id="dogImage" alt="Random Dog">
+    </div>
+
+    <p id="breed" class="breed"></p>
+
+    <button onclick="getDog()">Get Random Dog</button>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
