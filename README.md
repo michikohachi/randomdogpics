@@ -27,8 +27,12 @@ https://dog.ceo/api/breeds/image/random
 ---
 
 ## ▶️ How to Run
-1. Download or clone the project
-2. Open `index.html` in your browser
-3. Click Get Random Dog
-
+1. In Explorer, double-click index.html.
+2. Using Live Server (VS Code)
+- Open the project folder in Visual Studio Code.
+- Install the Live Server extension if you don’t have it yet.
+- Right-click on index.html (or your main HTML file).
+- Click Open with Live Server.
+- The project will open in your default browser and automatically refresh whenever you make changes to the code.
+This allows you to see real-time updates and test interactions without manually refreshing the browser.
 
