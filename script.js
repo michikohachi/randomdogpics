@@ -1,4 +1,24 @@
+const barkSounds = [
+  "sounds/bark1.m4a",
+  "sounds/bark2.m4a",
+  "sounds/bark3.m4a"
+];
 
+let barkAudio = null;
+
+function playRandomBark() {
+  // Stop any previous bark
+  if (barkAudio) {
+    barkAudio.pause();
+    barkAudio.currentTime = 0;
+  }
+
+  Pick a random bark and play
+  const randomIndex = Math.floor(Math.random() * barkSounds.length);
+  barkAudio = new Audio(barkSounds[randomIndex]);
+  barkAudio.volume = 0.4;
+  barkAudio.play();
+}
 function getDog() {
   //Stop previous bark instantly
   if (barkAudio) {
@@ -42,3 +62,4 @@ function getDog() {
 
 // Load dog on start
 getDog();
+
